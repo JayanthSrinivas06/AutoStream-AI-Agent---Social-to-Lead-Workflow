@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoStream AI - Social-to-Lead Agent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Marked.js for markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <circle cx="14" cy="14" r="12" stroke="url(#logoGradient)" stroke-width="2"/>
+                            <path d="M14 6L18 10L14 14L10 10L14 6Z" fill="url(#logoGradient)"/>
+                            <path d="M14 14L18 18L14 22L10 18L14 14Z" fill="url(#logoGradient)" opacity="0.6"/>
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0" y1="0" x2="28" y2="28">
+                                    <stop offset="0%" stop-color="#ffffff"/>
+                                    <stop offset="100%" stop-color="#888888"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">AutoStream</span>
+                        <span class="logo-subtitle">AI Assistant</span>
+                    </div>
+                </div>
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Online</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Container -->
+        <div class="chat-wrapper">
+            <div class="chat-container" id="chatContainer">
+                <!-- Welcome Message -->
+                <div class="welcome-section">
+                    <div class="welcome-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="#333" stroke-width="2"/>
+                            <path d="M24 12L30 18L24 24L18 18L24 12Z" fill="#666"/>
+                            <path d="M24 24L30 30L24 36L18 30L24 24Z" fill="#444"/>
+                        </svg>
+                    </div>
+                    <h1 class="welcome-title">Welcome to AutoStream AI</h1>
+                    <p class="welcome-description">Your intelligent assistant for video editing automation. Ask about pricing, features, or get started with a plan!</p>
+                    <div class="quick-actions">
+                        <button class="quick-action-btn" onclick="sendQuickMessage('What are your pricing plans?')">
+                            💰 Pricing Plans
+                        </button>
+                        <button class="quick-action-btn" onclick="sendQuickMessage('Tell me about features')">
+                            ✨ Features
+                        </button>
+                        <button class="quick-action-btn" onclick="sendQuickMessage('I want to get started')">
+                            🚀 Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-section">
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    class="message-input"
+                    placeholder="Ask about pricing, features, or get started..."
+                    autocomplete="off"
+                />
+                <button id="sendButton" class="send-button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2 10L18 2L10 18L8 11L2 10Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="input-footer">
+                <span class="input-hint">Press <kbd>Enter</kbd> to send</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

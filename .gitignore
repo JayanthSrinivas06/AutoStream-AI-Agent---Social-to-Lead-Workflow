@@ -1,0 +1,104 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+*.md
+!README.md
+
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Vector Store / Embeddings Cache
+faiss_index/
+*.faiss
+*.pkl
+*.pickle
+
+# OS Files
+Thumbs.db
+.DS_Store
+
+# Vercel
+.vercel
+
+# Node modules (if using any frontend build tools)
+node_modules/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# API Keys and Secrets (extra safety)
+*_api_key*
+*secret*
+credentials.json
+
+# Checkpoints
+.checkpoints/
+
+# Test files
+test_*.py
+*_test.py
+
+# Personal notes
+notes.md
+TODO.md
+scratch.py

@@ -1,0 +1,109 @@
+{
+    "pricing": {
+        "basic_plan": {
+            "name": "Basic Plan",
+            "price": "$29/month",
+            "price_value": 29,
+            "features": [
+                "10 videos per month",
+                "720p resolution",
+                "Basic editing tools",
+                "Standard support"
+            ],
+            "limitations": [
+                "Limited to 10 videos monthly",
+                "No 4K support",
+                "No AI features"
+            ]
+        },
+        "pro_plan": {
+            "name": "Pro Plan",
+            "price": "$79/month",
+            "price_value": 79,
+            "features": [
+                "Unlimited videos",
+                "4K resolution support",
+                "AI-powered captions",
+                "Advanced editing suite",
+                "24/7 priority support",
+                "Custom branding",
+                "Multi-platform export"
+            ],
+            "best_for": [
+                "YouTube creators",
+                "Instagram content creators",
+                "TikTok professionals",
+                "Professional video editors"
+            ]
+        }
+    },
+    "policies": {
+        "refund_policy": {
+            "title": "Refund Policy",
+            "description": "We offer refunds within 7 days of purchase. After 7 days, no refunds are available.",
+            "details": [
+                "Full refund within 7 days",
+                "No questions asked",
+                "Processed within 5-7 business days",
+                "No refunds after 7-day window"
+            ]
+        },
+        "support": {
+            "basic_support": "Email support during business hours (9 AM - 5 PM EST)",
+            "pro_support": "24/7 priority support via email, chat, and phone",
+            "response_time_basic": "Within 24-48 hours",
+            "response_time_pro": "Within 2 hours"
+        },
+        "trial": {
+            "available": true,
+            "duration": "14 days",
+            "features": "Full access to Pro plan features",
+            "credit_card_required": false
+        }
+    },
+    "features": {
+        "ai_captions": {
+            "name": "AI-Powered Captions",
+            "description": "Automatically generate accurate captions and subtitles in multiple languages",
+            "available_in": [
+                "Pro Plan"
+            ],
+            "languages_supported": 50
+        },
+        "video_quality": {
+            "basic": "Up to 720p HD",
+            "pro": "Up to 4K Ultra HD"
+        },
+        "editing_tools": {
+            "basic": [
+                "Trim and cut",
+                "Basic transitions",
+                "Text overlays",
+                "Music library"
+            ],
+            "pro": [
+                "All Basic features",
+                "Advanced color grading",
+                "Motion tracking",
+                "Green screen removal",
+                "AI scene detection",
+                "Batch processing"
+            ]
+        }
+    },
+    "platforms_supported": [
+        "YouTube",
+        "Instagram",
+        "TikTok",
+        "Facebook",
+        "Twitter",
+        "LinkedIn",
+        "Twitch"
+    ],
+    "company_info": {
+        "name": "AutoStream",
+        "description": "AI-powered automated video editing platform for content creators",
+        "founded": "2023",
+        "mission": "Empowering creators to produce professional-quality videos in minutes, not hours"
+    }
+}
