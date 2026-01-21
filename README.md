@@ -214,22 +214,6 @@ All AI responses are rendered with markdown for better readability.
    - Open `frontend/index.html` in browser
    - Or visit http://localhost:8000
 
-### Vercel Deployment
-
-1. **Configure Environment Variables**
-   - `GEMINI_API_KEY`: Your Gemini API key
-   - `GEMINI_MODEL`: gemini-2.5-flash-lite (optional)
-
-2. **Deploy**
-   ```bash
-   vercel
-   ```
-
-The `vercel.json` configuration handles:
-- Python serverless functions in `/api`
-- Static frontend files in `/frontend`
-- Automatic routing
-
 ## 📊 Key Features
 
 ### Intent Classification
